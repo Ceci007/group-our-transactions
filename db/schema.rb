@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_09_145135) do
+ActiveRecord::Schema.define(version: 2020_11_09_160616) do
+
+  create_table "decors", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.decimal "price", precision: 10, scale: 2
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_decors_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -18,4 +27,5 @@ ActiveRecord::Schema.define(version: 2020_11_09_145135) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "decors", "users"
 end
