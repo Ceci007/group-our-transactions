@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 
+  def not_logged_in?
+    redirect_to user_path(current_user) if logged_in?
+  end
+
   def icons
     %w[ad
        address-book
