@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show]
+  before_action :require_login, only: %i[show]
   before_action :require_user, only: [:show]
-  before_action :not_logged_in?, only: [:new] 
+  before_action :not_logged_in?, only: [:new]
 
   def new; end
 
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username)
+    params.require(:user).permit(:username, :email)
   end
 
   def set_user

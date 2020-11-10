@@ -13,6 +13,13 @@ class ApplicationController < ActionController::Base
     redirect_to user_path(current_user) if logged_in?
   end
 
+  def require_login
+    unless logged_in?
+      flash[:alert] = 'You must be logged in to continue with this action.'
+      redirect_to login_path
+    end
+  end
+
   def icons
     %w[ad
        address-book

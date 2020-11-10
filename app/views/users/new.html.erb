@@ -9,6 +9,10 @@
                            <%= f.text_field :username, autofocus: true, autocomplete: 'user name', placeholder: "User name" , class: 'form-control' %>
                      </div>
                      <div class="form-group">
+                        <label for="email"><%= f.label :email %></label>
+                        <%= f.email_field :email, class: "form-control shadow rounded", id: "email", placeholder: "Enter your email address" %>
+                     </div>
+                     <div class="form-group">
                           <%= f.submit "Sign up", class: 'btn btn-secondary btn-block' %>
                      </div>
                  </div>

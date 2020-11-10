@@ -1,5 +1,6 @@
 class DecorsController < ApplicationController
   before_action :set_user, only: %i[show index create unlisted]
+  before_action :require_login, only: %i[index]
   before_action :require_user, only: %i[edit update destroy unlisted index]
 
   def index
@@ -7,7 +8,9 @@ class DecorsController < ApplicationController
     @total = @decors.pluck(:price).sum
   end
 
-  def new; end
+  def new
+    @decor = Decor.new
+  end
 
   def create
     new_decor = @user.decors.build(decor_params)
@@ -15,7 +18,7 @@ class DecorsController < ApplicationController
       flash[:notice] = 'You successfully created a new decor.'
       redirect_to user_decors_path
     else
-      render 'new'
+      render :new
     end
   end
 
