@@ -4,15 +4,20 @@ class UsersController < ApplicationController
   before_action :require_user, only: [:show]
   before_action :not_logged_in?, only: [:new]
 
-  def new; end
+  def new
+    @user = User.new
+  end
 
   def create
     redirect_to user_path(current_user) if logged_in?
     @user = User.new(user_params)
-    @user.save
-    session[:user_id] = @user.id
-    flash[:notice] = "Welcome #{@user.username}"
-    redirect_to user_path(@user)
+    if @user.save
+      session[:user_id] = @user.id
+      flash[:notice] = "Welcome #{@user.username}"
+      redirect_to user_path(@user)
+    else
+      render 'new'  
+    end
   end
 
   def show; end
