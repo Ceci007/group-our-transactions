@@ -11,8 +11,7 @@
 
   <body>
     <%= render 'layouts/navigation' if logged_in? %>
-    <%= render 'layouts/flash' %>
-    <div class="container-fluid p-0">
+    <div class="container-fluid px-0 mt-5">
       <%= yield %>
     </div>
   </body>

@@ -1,22 +1,41 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+:root {
+  --color-primary: #3778c2; 
+  --color-secondary: #5fb523; 
+  --color-text: #434b54;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
 .show-page {
   width: 100%;
   height: 100vh;
-  background-color: #3778c2;
+  background-color: #fff;
 }
 
 .show-list {
-  height: 100px;
+  text-align: left !important;
+} 
+
+.card-width {
+  width: 600px !important;
+}
+
+.link {
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom:  rgba(0, 0, 0, 0.7);
 }
 
 .signup-nav {
-  background-color: #3778c2;
+  background-color: #fff;
   height: 60px;
 }
 
@@ -42,4 +61,9 @@ body {
 .group-content p {
   height: 30px;
   line-height: 2;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
 }
