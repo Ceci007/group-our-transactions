@@ -31,7 +31,13 @@ body {
 
 .link {
   color: rgba(0, 0, 0, 0.7);
-  border-bottom:  rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .signup-nav {
@@ -66,4 +72,8 @@ body {
 i {
   color: rgba(0, 0, 0, 0.3);
   margin-right: 10px;
+}
+
+.margin-top {
+  margin-top: 80px !important;
 }
