@@ -2,7 +2,6 @@ class Category < ApplicationRecord
   belongs_to :user
   has_many :decors
 
-  validates :name, presence: true
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :icon, presence: true
 

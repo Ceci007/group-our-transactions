@@ -28,17 +28,11 @@ class CategoriesController < ApplicationController
   end
 
   def index
-    @categories = Category.all.alphabetical_order
+    @categories = Category.all.alphabetical_order.includes(:user)
   end
 
   def show
-    @decors = @category.decors
-  end
-
-  def destroy
-    @category.destroy
-    flash[:notice] = 'Category successfully deleted.'
-    redirect_to categories_path
+    @decors = @category.decors.includes(:user)
   end
 
   private
