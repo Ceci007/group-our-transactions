@@ -1,18 +1,16 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <%= link_to "Home", user_path(current_user), class: "navbar-brand"%>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse app-nav" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li>
-        <%= link_to "Home", user_path(current_user), class: "navbar-brand"%>
-      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 pt-2 mb-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Decors
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
           <%= link_to "My Decors.", user_decors_path(current_user), class: "dropdown-item" %>
           <%= link_to "My uncategorized decors.", user_unlisted_decor_path(current_user), class: "dropdown-item" %>
           <div class="dropdown-divider"></div>
@@ -22,8 +20,13 @@
       <li class="nav-item">
         <%= link_to "Categories", categories_path, class: "nav-link text-light"%>
       </li>
-      <li class="nav-tem">
-        <%= link_to "Log out", logout_path, method: :delete, class: 'nav-link text-light' %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= current_user.username %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+          <%= link_to "Log out", logout_path, method: :delete, class: 'dropdown-item' %>
+        </div>
       </li>
     </ul>
   </div>

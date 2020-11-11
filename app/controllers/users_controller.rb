@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show]
+  before_action :set_user, only: %i[show edit update]
   before_action :require_login, only: %i[show]
   before_action :require_user, only: [:show]
   before_action :not_logged_in?, only: [:new]
+
+  def show; 
+  end  
 
   def new
     @user = User.new
@@ -18,8 +21,6 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
-
-  def show; end
 
   private
 

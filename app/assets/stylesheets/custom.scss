@@ -56,8 +56,9 @@ body {
 
 .link:hover {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  border-bottom: 1px solid transparent;
+  color: #000;
+  border-bottom: 2px solid #000;
+  font-family: "Proxima Nova Bold";
 }
 
 .show-list h5 {
@@ -86,7 +87,6 @@ body {
 
 .nav-link {
   font-size: 16px !important;
-  margin-top: 4px;
 }
 
 i {
