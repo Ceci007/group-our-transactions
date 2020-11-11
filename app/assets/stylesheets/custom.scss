@@ -93,6 +93,35 @@ i {
   margin-top: 80px !important;
 }
 
+.bg-green {
+  background-color: var(--color-secondary);
+  position: fixed;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.decor-section {
+  padding-bottom: 80px;
+}
+
+.btn-outline-ghost {
+  text-transform: uppercase;
+  color: #fff; 
+  border: 1px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.btn-outline-ghost:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 @media only screen and (max-width: 991px) {
   .app-nav ul,
   .app-nav a {

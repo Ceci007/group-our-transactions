@@ -45,7 +45,7 @@ module ApplicationHelper
   def edit_button(category)
     if current_user == category.user
       content_tag(:span) do
-        link_to('Edit', edit_category_path(category), class: 'btn btn-danger btn-sm ml-1')
+        link_to('Edit', edit_category_path(category), class: 'btn btn-primary btn-sm ml-1')
       end
     end
   end

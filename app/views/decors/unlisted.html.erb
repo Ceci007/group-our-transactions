@@ -5,8 +5,10 @@
     </div>
 </div>
 <%= render @decors %>
-<div class="card text-white bg-success mb-3 rounded-0">
+<div class="card text-white bg-green mb-3 rounded-0">
   <div class="card-body">
-      <%= link_to "Add New Decor", new_user_decor_path, class: "btn btn-outline-light btn-lg btn-block" %>
+      <%= link_to new_user_decor_path, class: "btn-outline-ghost" do %>
+        Add New Decor
+      <% end %>
   </div>
 </div>
