@@ -4,8 +4,8 @@ RSpec.describe UsersController, type: :controller do
   describe 'User #create' do
     context 'it redirects to user#show when successful' do
       it 'redirects to the user show page' do
-        post :create, params: { user: { username: 'Ceci' } }
-        expect(response).to redirect_to(user_url(User.find_by(username: 'Ceci')))
+        post :create, params: { user: { username: 'Ceci', email: 'cecibenitezca@gmail.com' } }
+        expect(response).to redirect_to(user_url(User.find_by(username: 'Ceci', email: 'cecibenitezca@gmail.com')))
       end
     end
 
