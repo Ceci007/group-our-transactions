@@ -1,7 +1,7 @@
  <div class="show-page d-flex flex-column align-items-center pt-5">
          <%= render 'layouts/flash' %>
          <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.username) %>
-         <h4><%= @user.username %></h4>
+         <h4><%= sanitize @user.username.html_safe %></h4>
          <div class="card px-5 my-2 card-width">
             <div class="d-flex show-list align-items-center">
              <%= fa_icon "image", class: "fa-3x" %>
