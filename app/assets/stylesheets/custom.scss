@@ -60,11 +60,6 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-.signup-nav {
-  background-color: #fff;
-  height: 60px;
-}
-
 .show-list h5 {
   line-height: 2.7;
   width: 230px;
@@ -96,4 +91,12 @@ i {
 
 .margin-top {
   margin-top: 80px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .app-nav ul,
+  .app-nav a {
+    width: 200px;
+    background-color: var(--color-primary) !important;
+  }
 }
