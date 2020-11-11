@@ -1,4 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap';
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url('/assets/ProximaNovaAltLight.otf');
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url('/assets/ProximaNovaAltBold.otf');
+}
 
 :root {
   --color-primary: #3778c2; 
@@ -9,10 +18,19 @@
 html,
 body {
   overflow-x: hidden;
+  font-family: "Proxima Nova Light" !important;
 }
 
 .bg-primary {
   background-color: var(--color-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.nav-link, .navbar-brand {
+  font-family: "Proxima Nova Bold";
 }
 
 .show-page {
@@ -33,11 +51,13 @@ body {
   color: rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .link:hover {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid transparent;
 }
 
 .signup-nav {
