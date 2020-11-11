@@ -26,6 +26,7 @@ gem 'font-awesome-rails'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar_image_tag', '~> 1.2'
+gem 'bullet'
 # Use Active Storage variant
 # gem 'active_storage_validations'
 # gem 'image_processing', '~> 1.2'
@@ -44,7 +45,6 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'bullet'
 end
 
 group :test do

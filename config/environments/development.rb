@@ -1,6 +1,4 @@
-Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
-  
+Rails.application.configure do  
   config.after_initialize do
     Bullet.enable        = true
     Bullet.alert         = true
