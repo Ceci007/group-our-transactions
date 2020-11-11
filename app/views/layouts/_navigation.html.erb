@@ -9,7 +9,7 @@
         <%= link_to "Home", user_path(current_user), class: "navbar-brand"%>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle h5 pt-2 mb-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle text-light h5 pt-2 mb-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Decors
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -20,9 +20,11 @@
         </div>
       </li>
       <li class="nav-item">
-        <%= link_to "Categories", categories_path, class: "nav-link"%>
+        <%= link_to "Categories", categories_path, class: "nav-link text-light"%>
+      </li>
+      <li class="nav-tem">
+        <%= link_to "Log out", logout_path, method: :delete, class: 'nav-link text-light' %>
       </li>
     </ul>
-     <%= link_to "Log out", logout_path, method: :delete, class: 'nav-link text-light' %>
   </div>
 </nav>

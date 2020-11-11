@@ -84,6 +84,11 @@ body {
   line-height: 2;
 }
 
+.nav-link {
+  font-size: 16px !important;
+  margin-top: 4px;
+}
+
 i {
   color: rgba(0, 0, 0, 0.3);
   margin-right: 10px;
@@ -121,11 +126,25 @@ i {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.circle-avater {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 @media only screen and (max-width: 991px) {
   .app-nav ul,
   .app-nav a {
     width: 200px;
     background-color: var(--color-primary) !important;
+    display: block;
+    margin: 10px auto; 
   }
 }
