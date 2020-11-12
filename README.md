@@ -1,16 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-#  🧐 Group Our Transactions 
+#  🧐 Group Our Transactions (Mobile App)
 
-It is an app that groups payments of decorations bought for designing specific sections of a home. The decorations or decors are divided into categories of specific rooms of a home. Example living room, bathroom, kitchen, etc. 
+this is an app made specially for mobiles, is an app that groups payments of decorations bought for designing specific sections of a home. The decorations or decors are divided into categories of specific rooms of a home. Example living room, bathroom, kitchen, etc. 
 
-It is a mobile app for grouping decor payments according to your categories of choice.
+Is a mobile app for grouping decor payments according to your categories of choice.
 
 ![Sign Up page](./screenshot-1.png)
 
 ![Categories page](./screenshot-2.png)
 
 ![My Decors page](./screenshot-3.png)
+
+## Mobile Views 
+![My Decors mobile page](./screenshot-5.png)
+
+![Categories mobile page](./screenshot-6.png)
 
 ## 🔴 Demos
 
