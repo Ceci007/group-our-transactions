@@ -20,7 +20,7 @@ It is a mobile app for grouping decor payments according to your categories of c
 
 ## Tests with RSpec 
 
-This game was tested with [Rspec](https://en.wikipedia.org/wiki/RSpec) wich is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications. 
+This website was tested with [Rspec](https://en.wikipedia.org/wiki/RSpec) wich is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications. 
 
 ## Install rspec-rails gem
 - In a terminal window type ```gem install rspec-rails``` or simply add the gem to your Gemfile and run ```bundle install```, this last choice is the recomended way of doing it.
