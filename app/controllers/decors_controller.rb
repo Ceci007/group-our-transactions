@@ -5,8 +5,7 @@ class DecorsController < ApplicationController
   before_action :set_decor, only: %i[edit destroy update]
 
   def index
-    # @decors = @user.decors.ordered_by_most_recent
-    @decors = @user.decors.ordered_by_most_recent.includes(:categories) # this line solves the n + 1 problem
+    @decors = @user.decors.ordered_by_most_recent.includes(:categories)
     @total = @decors.pluck(:price).sum
   end
 

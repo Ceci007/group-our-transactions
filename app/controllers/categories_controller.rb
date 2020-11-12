@@ -29,13 +29,11 @@ class CategoriesController < ApplicationController
   end
 
   def index
-    # @categories = Category.all.alphabetical_order
-    @categories = Category.all.alphabetical_order.includes(:user) # this line solves the n + 1 problem
+    @categories = Category.all.alphabetical_order.includes(:user)
   end
 
   def show
-    # @decors = Decor.all
-    @decors = @category.decors.includes(:user) # this line solves the n + 1 problem
+    @decors = @category.decors.includes(:user)
     @total = @decors.pluck(:price).sum
   end
 
