@@ -1,7 +1,7 @@
 class DecorCategoriesController < ApplicationController
   before_action :require_login
   before_action :set_user, only: %i[new create]
-  before_action :require_user, only: %i[new create] 
+  before_action :require_user, only: %i[new create]
 
   def new
     @decor = Decor.find(params[:decor_id])

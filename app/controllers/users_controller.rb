@@ -4,8 +4,7 @@ class UsersController < ApplicationController
   before_action :require_user, only: [:show]
   before_action :not_logged_in?, only: [:new]
 
-  def show; 
-  end  
+  def show; end
 
   def new
     @user = User.new

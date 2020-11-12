@@ -1,24 +1,25 @@
 @import 'bootstrap/dist/css/bootstrap';
+
 @font-face {
-  font-family: "Proxima Nova Light";
+  font-family: "Nova Light";
   src: url('/assets/ProximaNovaAltLight.otf');
 }
 
 @font-face {
-  font-family: "Proxima Nova Bold";
+  font-family: "Nova Bold";
   src: url('/assets/ProximaNovaAltBold.otf');
 }
 
 :root {
-  --color-primary: #3778c2; 
-  --color-secondary: #5fb523; 
+  --color-primary: #3778c2;
+  --color-secondary: #5fb523;
   --color-text: #434b54;
 }
 
 html,
 body {
   overflow-x: hidden;
-  font-family: "Proxima Nova Light" !important;
+  font-family: "Nova Light", sans-serif !important;
 }
 
 .bg-primary {
@@ -29,8 +30,9 @@ body {
   background-color: var(--color-primary) !important;
 }
 
-.nav-link, .navbar-brand {
-  font-family: "Proxima Nova Bold";
+.nav-link,
+.navbar-brand {
+  font-family: "Nova Bold", sans-serif;
 }
 
 .show-page {
@@ -41,7 +43,7 @@ body {
 
 .show-list {
   text-align: left !important;
-} 
+}
 
 .card-width {
   width: 600px !important;
@@ -58,7 +60,7 @@ body {
   text-decoration: none;
   color: #000;
   border-bottom: 2px solid #000;
-  font-family: "Proxima Nova Bold";
+  font-family: "Nova Bold", sans-serif;
 }
 
 .show-list h5 {
@@ -112,7 +114,7 @@ i {
 
 .btn-outline-ghost {
   text-transform: uppercase;
-  color: #fff; 
+  color: #fff;
   border: 1px solid #fff;
   display: block;
   width: 100%;
@@ -134,8 +136,8 @@ i {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .dropdown-item:active {
@@ -165,6 +167,7 @@ input[type="color"]:focus,
   border-color: var(--color-primary);
   outline: 0;
   outline: none;
+
   /* IE6-9 */
 
   -webkit-box-shadow: none;
@@ -178,6 +181,6 @@ input[type="color"]:focus,
     width: 200px;
     background-color: var(--color-primary) !important;
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
   }
 }

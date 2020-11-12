@@ -23,8 +23,8 @@ gem 'font-awesome-rails'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'gravatar_image_tag', '~> 1.2'
 gem 'bullet'
+gem 'gravatar_image_tag', '~> 1.2'
 gem 'pg'
 # Use Active Storage variant
 # gem 'active_storage_validations'

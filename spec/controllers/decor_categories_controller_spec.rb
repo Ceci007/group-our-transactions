@@ -9,7 +9,7 @@ RSpec.describe DecorCategoriesController, type: :controller do
       @decor = user.decors.create(name: 'Towel', price: 4)
       @category = user.categories.create(name: 'Bathroom', icon: 'bath')
     end
-    
+
     context 'it redirects to user_decors#index when successful' do
       it 'redirects to the user_decors index page' do
         post :create, params: { user_id: user.id, decor_id: @decor.id, decor_category: { category_id: @category.id } }

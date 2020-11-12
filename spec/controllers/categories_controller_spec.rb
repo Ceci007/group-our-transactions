@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe CategoriesController, type: :controller do
   let(:user) { User.create(username: 'Ceci', email: 'cecibenitezca@gmail.com') }
-  
+
   describe 'Category #create' do
     before(:example) do
       session[:user_id] = user.id
