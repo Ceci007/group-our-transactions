@@ -11,9 +11,9 @@
          Decors
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-          <%= link_to "My Decors.", user_decors_path(current_user), class: "dropdown-item text-light" %>
-          <%= link_to "My uncategorized decors.", user_unlisted_decor_path(current_user), class: "dropdown-item text-light" %>
-          <%= link_to "Add New Decor", new_user_decor_path(current_user), class: "dropdown-item text-light" %>
+          <%= link_to "My Decors.", user_decors_path(current_user), class: "dropdown-item" %>
+          <%= link_to "My uncategorized decors.", user_unlisted_decor_path(current_user), class: "dropdown-item" %>
+          <%= link_to "Add New Decor", new_user_decor_path(current_user), class: "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item">
@@ -24,7 +24,7 @@
           <%= current_user.username %>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-          <%= link_to "Log out", logout_path, method: :delete, class: 'dropdown-item text-light' %>
+          <%= link_to "Log out", logout_path, method: :delete, class: 'dropdown-item' %>
         </div>
       </li>
     </ul>
