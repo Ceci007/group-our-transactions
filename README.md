@@ -18,6 +18,20 @@ It is a mobile app for grouping decor payments according to your categories of c
 
 [Video Demo](https://drive.google.com/file/d/1jWASAz97ByhsPhR8Q_dEvMsqCx-SCd-G/view?usp=sharing)
 
+## Tests with RSpec 
+
+This game was tested with [Rspec](https://en.wikipedia.org/wiki/RSpec) wich is a computer domain-specific language (DSL) testing tool written in programming language Ruby to test Ruby code. It is a behavior-driven development (BDD) framework which is extensively used in production applications. 
+
+## Install rspec-rails gem
+- In a terminal window type ```gem install rspec-rails``` or simply add the gem to your Gemfile and run ```bundle install```, this last choice is the recomended way of doing it.
+- Once rspec install has finished, go to project directory and type ```rails generate rspec:install``` 
+- You will see a folder ```spec``` and a files ```rails_helper.rb``` and ```spec_helper.rb``` created inside that folder.
+- You can generate a spec test for your models with this command ```rails generate rspec:model model-name```.
+
+## Run Rspec 
+- Open a terminal window and type ```bundle exec rspec``` command
+- All tests should have passed 
+![RSpec tests](./screenshot-4.png)
 
 ## 🔧 Built With these features
 - Ruby. v2.6.6
