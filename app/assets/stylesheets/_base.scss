@@ -1,0 +1,25 @@
+/* --------------- base -------------------- */
+
+@import 'bootstrap/dist/css/bootstrap';
+
+@font-face {
+  font-family: "Nova Light";
+  src: url('/assets/ProximaNovaAltLight.otf');
+}
+
+@font-face {
+  font-family: "Nova Bold";
+  src: url('/assets/ProximaNovaAltBold.otf');
+}
+
+:root {
+  --color-primary: #3778c2;
+  --color-secondary: #5fb523;
+  --color-text: #434b54;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Nova Light", sans-serif !important;
+}
