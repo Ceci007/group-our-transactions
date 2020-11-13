@@ -1,0 +1,37 @@
+<% if @category.errors.any?%>
+<ul class="alert alert-warning alert-dismissible fade show rounded-0 mt-1 mx-auto w-50" role="alert">
+    <%@category.errors.full_messages.each do |err|%>
+        <li>
+            <%=err%>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </li>
+    <%end%>
+</ul>
+<%end%>
+<%= category_errors_msgs(@category) %>
+
+<div class="margin-top">
+    <h2 class="text-center">New Category</h2>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <%= form_with scope: :category, url: categories_path, local: true do |f| %>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <%= f.label :name %>
+                            <%= f.text_field :name, autofocus: true, autocomplete: 'category name', placeholder: "Category name" , class: 'form-control' %>
+                        </div>
+                        <div class="form-group">
+                            <%= f.select :icon, options_for_select(@category_array), {include_blank: "Select Icon"}, {class: "custom-select mb-1"} %>
+                        </div>
+                        <div class="form-group">
+                            <%= f.submit "New Category", class: 'btn btn-secondary btn-block' %>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

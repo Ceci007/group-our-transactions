@@ -1,0 +1,12 @@
+/* ------------------ media queries -------------------- */
+
+@media only screen and (max-width: 991px) {
+  .app-nav ul,
+  .app-nav a {
+    width: 200px;
+    background-color: var(--color-primary) !important;
+    display: block;
+    margin: 10px auto;
+    color: #fff !important;
+  }
+}

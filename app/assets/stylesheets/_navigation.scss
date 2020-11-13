@@ -1,0 +1,24 @@
+/* -------------- Navigation -------------- */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.nav-link,
+.navbar-brand {
+  font-family: "Nova Bold", sans-serif;
+}
+
+.nav-link {
+  font-size: 16px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-item:active {
+  background-color: var(--color-primary) !important;
+}

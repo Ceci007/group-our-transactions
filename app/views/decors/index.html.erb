@@ -1,0 +1,17 @@
+<%= render 'layouts/flash' %>
+<div class="card mb-5">
+    <div class="card-body d-flex justify-content-between">
+        <p class="card-text">Total amount</p>
+        <p class="card-text font-weight-bold"><%= number_to_currency(@total)%></p>
+    </div>
+</div>
+<div class="decor-section">
+    <%= render @decors %>
+</div>
+<div class="card text-white bg-green mb-3 rounded-0">
+  <div class="card-body">
+      <%= link_to new_user_decor_path, class: "btn-outline-ghost" do %>
+        Add New Decor
+      <% end %>
+  </div>
+</div>
