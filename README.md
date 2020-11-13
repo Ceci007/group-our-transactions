@@ -19,7 +19,7 @@ Is a mobile app for grouping decor payments according to your categories of choi
 
 [Live Demo](https://group-our-transactions.herokuapp.com/)
 
-[Video Demo](https://drive.google.com/file/d/1jWASAz97ByhsPhR8Q_dEvMsqCx-SCd-G/view?usp=sharing)
+[Video Demo](https://drive.google.com/file/d/1iCnZgT5OyVkxkuVshCFESzXMhBf_uGNi/view?usp=sharing)
 
 ## Tests with RSpec 
 
@@ -40,6 +40,7 @@ This website was tested with [Rspec](https://en.wikipedia.org/wiki/RSpec) wich i
 ## 🔧 Built With these features
 - Ruby. v2.6.6
 - Ruby on Rails. v6.0.3
+- PostgreSQL.
 - Using Rubocop Linters.
 - Bootstrap
 
