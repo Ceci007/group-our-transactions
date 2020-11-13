@@ -13,9 +13,7 @@ Is a mobile app for grouping decor payments according to your categories of choi
 ![My Decors page](./screenshot-3.png)
 
 ## Mobile Views 
-![My Decors mobile page](./screenshot-5.png)
-
-![Categories mobile page](./screenshot-6.png)
+![My Decors mobile page](./screenshot-5.png) ![Categories mobile page](./screenshot-6.png)
 
 ## 🔴 Demos
 
@@ -35,7 +33,8 @@ This website was tested with [Rspec](https://en.wikipedia.org/wiki/RSpec) wich i
 
 ## Run Rspec 
 - Open a terminal window and type ```bundle exec rspec``` command
-- All tests should have passed 
+- All tests should have passed.
+
 ![RSpec tests](./screenshot-4.png)
 
 ## 🔧 Built With these features
